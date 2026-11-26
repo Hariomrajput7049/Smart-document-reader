@@ -1,10 +1,90 @@
-node_modules/
+# Environment variables and credentials
 .env
+.env*.local
+.env.production
+.env.development
+*.env
+!.env.example
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# IDE & Editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Node.js & Frontend dependencies
+node_modules/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Frontend build outputs
+dist/
+dist-ssr/
+build/
+.vite/
+coverage/
+
+# Python cache & artifacts
 __pycache__/
-*.pyc
-.venv/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Python Virtual Environments
 venv/
+.venv/
 env/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing & Linting
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Databases & Local Vector Store
 *.db
-uploads/
+*.sqlite
+*.sqlite3
+backend/sql_app.db
 chroma_db/
+**/chroma_db/
+
+# File uploads & storage
+uploads/
+**/uploads/
+storage/
+
+# Logs & Archives
+logs/
+*.log
+*.zip
+*.tar.gz
+*.rar
+*.7z
